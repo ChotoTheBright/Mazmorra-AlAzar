@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo8seg48ivcwe"]
+
+[ext_resource type="Material" uid="uid://b48g37fsxdy78" path="res://assets/ObjectMat.tres" id="1_ygvu7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_pr6xj"]
+material = ExtResource("1_ygvu7")
+size = Vector3(0.8, 2, 0.8)
+
+[node name="object" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("BoxMesh_pr6xj")
+skeleton = NodePath("../tile")

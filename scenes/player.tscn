@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://cj48xwwbm4v2x"]
+
+[ext_resource type="Script" path="res://assets/scripts/grid_player.gd" id="1_76to5"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xumk5"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ty8f8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d12t0"]
+metallic_specular = 0.0
+
+[sub_resource type="PrismMesh" id="PrismMesh_03oe6"]
+size = Vector3(1, 1, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c02fq"]
+albedo_color = Color(0, 0, 0, 1)
+metallic_specular = 0.0
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("1_76to5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_xumk5")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_ty8f8")
+surface_material_override/0 = SubResource("StandardMaterial3D_d12t0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh"]
+transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, 0.5, 0, -0.5, -2.18557e-08, 0, 1.2, 0)
+mesh = SubResource("PrismMesh_03oe6")
+skeleton = NodePath("../../CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_c02fq")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.21
+one_shot = true
+
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+transform = Transform3D(-1, 8.74228e-08, 0, -5.61943e-08, -0.642788, 0.766044, 6.69697e-08, 0.766044, 0.642788, 0, 1.40064, 0)
+spring_length = 6.0
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
+transform = Transform3D(-1, -8.74228e-08, 0, 8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 6)

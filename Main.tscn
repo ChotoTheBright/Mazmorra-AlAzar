@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwfnsg6aeaq1i"]
+
+[ext_resource type="Script" path="res://assets/scripts/start_game.gd" id="1_bjibu"]
+[ext_resource type="Texture2D" uid="uid://6wo3ncm0kkei" path="res://assets/images-fonts/SKY1.png" id="2_j4xft"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_w75da"]
+panorama = ExtResource("2_j4xft")
+
+[sub_resource type="Sky" id="Sky_p3ho8"]
+sky_material = SubResource("PanoramaSkyMaterial_w75da")
+
+[sub_resource type="Environment" id="Environment_k84pm"]
+background_mode = 2
+sky = SubResource("Sky_p3ho8")
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_sky_contribution = 0.0
+ambient_light_energy = 0.5
+
+[node name="MAIN" type="Node3D"]
+script = ExtResource("1_bjibu")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_k84pm")
