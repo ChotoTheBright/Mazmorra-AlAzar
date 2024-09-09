@@ -2,7 +2,7 @@ extends Node
 #even numbers for the grid provide the best results
 @export var grid_size = 8 
 @onready var PRELOAD = Init
-@onready var player = Init.player
+@onready var player = Init.player #playerFP for first person view
 @onready var tile = Init.tile
 @onready var object = Init.object
 @onready var worldbox = Init.worldbox

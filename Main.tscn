@@ -18,6 +18,7 @@ ambient_light_energy = 0.5
 
 [node name="MAIN" type="Node3D"]
 script = ExtResource("1_bjibu")
+grid_size = 16
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_k84pm")
