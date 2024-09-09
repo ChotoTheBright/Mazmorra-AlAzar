@@ -1,5 +1,5 @@
 extends Node
-#even numbers provide the best results 8D
+#even numbers for the grid provide the best results
 @export var grid_size = 8 
 @onready var PRELOAD = Init
 @onready var player = Init.player
@@ -56,8 +56,6 @@ func enter_objects():
 				var tex_name : String = Init.obj_textures[ran_range]#0
 				@warning_ignore("int_as_enum_without_cast")
 				Init.objectmat.set_texture(0,load("res://assets/images-fonts/RetroTextures/Objects/"+tex_name))
-
-
 
 func enter_box():
 	randomize()

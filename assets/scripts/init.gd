@@ -1,6 +1,5 @@
-
 extends Node
-
+#putting everything in here as a MACRO
 @onready var player = preload("res://scenes/player.tscn")
 @onready var tile = preload("res://scenes/Tile.tscn")
 @onready var tilemat = preload("res://assets/TileMat.tres")
@@ -21,7 +20,6 @@ extends Node
 
 
 func _ready():
-	#var dir = DirAccess.open("res://assets/images-fonts/RetroTextures/")
 	var dir_floor = DirAccess.open("res://assets/images-fonts/RetroTextures/Floor")
 	var dir_walls = DirAccess.open("res://assets/images-fonts/RetroTextures/Walls")
 	var dir_objs = DirAccess.open("res://assets/images-fonts/RetroTextures/Objects")
