@@ -1,6 +1,7 @@
 
 extends Node
 
+@onready var player = preload("res://scenes/player.tscn")
 @onready var tile = preload("res://scenes/Tile.tscn")
 @onready var tilemat = preload("res://assets/TileMat.tres")
 @onready var tilerng = RandomNumberGenerator.new()
