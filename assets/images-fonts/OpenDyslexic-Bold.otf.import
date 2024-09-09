@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/OpenDyslexic-Bold.otf-001085adf4f31919b9194ce
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48

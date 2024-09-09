@@ -1,5 +1,5 @@
 extends Node
-#even numbers provide the best results 8]#
+#even numbers provide the best results 8D
 @export var grid_size = 8 
 @onready var PRELOAD = Init
 @onready var player = Init.player
