@@ -17,7 +17,9 @@ extends Node
 @onready var tile_textures = []
 @onready var obj_textures = []
 @onready var wall_textures = []
-#music/sfx#
+
+
+@onready var player_mode : bool = false #set to true for 1st Person
 
 
 func _ready():

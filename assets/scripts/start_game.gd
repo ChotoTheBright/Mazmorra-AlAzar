@@ -2,7 +2,8 @@ extends Node
 #even numbers for the grid provide the best results
 @export var grid_size = 8 
 @onready var PRELOAD = Init
-@onready var player = Init.player #playerFP for first person view
+@onready var player = Init.player
+@onready var playerFP = Init.playerFP #first person view
 @onready var tile = Init.tile
 @onready var object = Init.object
 @onready var worldbox = Init.worldbox
@@ -21,9 +22,14 @@ func _ready():
 	enter_box()
 
 func enter_player():
-	var inst = player.instantiate()
-	add_child(inst)
-	inst.translate(Vector3(0,0,0))
+	if Init.player_mode == false:
+		var inst = player.instantiate()
+		add_child(inst)
+		inst.translate(Vector3(0,0,0))
+	else:
+		var inst = playerFP.instantiate()
+		add_child(inst)
+		inst.translate(Vector3(0,0,0))
 
 
 func enter_grid():
