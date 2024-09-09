@@ -1,4 +1,6 @@
 extends Node
+#USE EVEN NUMBERS FOR BEST RESULTS ^___^
+@export var grid_size = 8 
 
 @onready var PRELOAD = Init
 @onready var player = preload("res://scenes/player.tscn")
@@ -8,16 +10,14 @@ extends Node
 @onready var environment = $WorldEnvironment
 @onready var rng = RandomNumberGenerator.new()
 
-var grid_size = 8
 var offset = 2
 var _collision_ = [] 
 
 func _ready():
-	#environment
 	Init.tilerng.randomize()
 	Init.wallrng.randomize()
 	Init.objrng.randomize()
-	#randomize()
+	randomize()
 	enter_grid()
 	enter_objects()
 	enter_player()
@@ -27,7 +27,7 @@ func enter_player():
 	var inst = player.instantiate()
 	add_child(inst)
 	inst.translate(Vector3(0,0,0))
-	pass
+
 
 func enter_grid():
 	randomize()
@@ -40,10 +40,8 @@ func enter_grid():
 			var ran_range = Init.tilerng.randi_range(0,8)
 			var tex_name : String = Init.tile_textures[ran_range]#0
 			@warning_ignore("int_as_enum_without_cast")
-			Init.tilemat.set_texture(0,load("res://assets/images-fonts/RetroTextures/"+tex_name))
-			#material here
-			pass
-	pass
+			Init.tilemat.set_texture(0,load("res://assets/images-fonts/RetroTextures/Floor/"+tex_name))
+
 
 func enter_objects():
 	randomize()
@@ -60,8 +58,9 @@ func enter_objects():
 				var ran_range = Init.objrng.randi_range(0,8)
 				var tex_name : String = Init.obj_textures[ran_range]#0
 				@warning_ignore("int_as_enum_without_cast")
-				Init.objectmat.set_texture(0,load("res://assets/images-fonts/RetroTextures/"+tex_name))
-				#material here
+				Init.objectmat.set_texture(0,load("res://assets/images-fonts/RetroTextures/Objects/"+tex_name))
+
+
 
 func enter_box():
 	randomize()
@@ -94,5 +93,4 @@ func enter_box():
 			var ran_range = Init.wallrng.randi_range(0,8)
 			var tex_name : String = Init.wall_textures[ran_range]#0
 			@warning_ignore("int_as_enum_without_cast")
-			Init.wallmat.set_texture(0,load("res://assets/images-fonts/RetroTextures/"+tex_name))
-			#material here
+			Init.wallmat.set_texture(0,load("res://assets/images-fonts/RetroTextures/Walls/"+tex_name))

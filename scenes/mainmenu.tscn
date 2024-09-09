@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://br2egfj6agjkf"]
 
 [ext_resource type="Script" path="res://assets/scripts/mainmenu.gd" id="1_ko41e"]
-[ext_resource type="Texture2D" uid="uid://55cnlic6u6oy" path="res://assets/images-fonts/RetroTextures/TILE_2B.png" id="2_jsyrx"]
+[ext_resource type="Texture2D" uid="uid://c1fbyiuwn3ewt" path="res://assets/images-fonts/RetroTextures/Walls/TILE_3D.png" id="2_cxdjd"]
 
 [node name="MAINMENU" type="Control"]
 layout_mode = 3
@@ -20,11 +20,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_jsyrx")
+texture = ExtResource("2_cxdjd")
 stretch_mode = 1
 
 [node name="Label" type="Label" parent="."]
-texture_filter = 5
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.347
@@ -36,6 +35,7 @@ offset_top = 0.23999
 offset_right = -237.864
 offset_bottom = -97.856
 scale = Vector2(3, 3)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "mazmorra 
 al azar"
 horizontal_alignment = 1

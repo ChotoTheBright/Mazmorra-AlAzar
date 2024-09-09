@@ -1,3 +1,4 @@
+
 extends Node
 
 @onready var tile = preload("res://scenes/Tile.tscn")
@@ -19,21 +20,46 @@ extends Node
 
 
 func _ready():
-	var dir = DirAccess.open("res://assets/images-fonts/RetroTextures/")
-	if dir:
-		dir.list_dir_begin()
-		var file_name = dir.get_next()
-		while file_name != "":
-			if dir.current_is_dir():
+	#var dir = DirAccess.open("res://assets/images-fonts/RetroTextures/")
+	var dir_floor = DirAccess.open("res://assets/images-fonts/RetroTextures/Floor")
+	var dir_walls = DirAccess.open("res://assets/images-fonts/RetroTextures/Walls")
+	var dir_objs = DirAccess.open("res://assets/images-fonts/RetroTextures/Objects")
+	var file_name_floor
+	var file_name_wall
+	var file_name_obj
+
+	if dir_floor:
+		dir_floor.list_dir_begin()
+		file_name_floor = dir_floor.get_next()
+		while file_name_floor != "":
+			if dir_floor.current_is_dir():
 				print("beep boop")
 			else:
-				if file_name.begins_with("FLOOR_") and file_name.ends_with("png"):
-					tile_textures.append(file_name)
-					#print("Found file: " + file_name)
-				if file_name.begins_with("BRICK_") and file_name.ends_with("png"):
-					wall_textures.append(file_name)
-				if !file_name.begins_with("FLOOR_") and !file_name.begins_with("BRICK_") and file_name.ends_with("png"):
-					obj_textures.append(file_name)
-			file_name = dir.get_next()
+				if file_name_floor.begins_with("FLOOR_") and file_name_floor.ends_with("png"):
+					tile_textures.append(file_name_floor)
+			file_name_floor = dir_floor.get_next()
+
+	if dir_walls:
+		dir_walls.list_dir_begin()
+		file_name_wall = dir_walls.get_next()
+		while file_name_wall != "":
+			if dir_walls.current_is_dir():
+				print("beep boop")
+			else:
+				if file_name_wall.begins_with("BRICK_") and file_name_wall.ends_with("png"):
+					wall_textures.append(file_name_wall)
+			file_name_wall = dir_walls.get_next()
+
+	if dir_objs:
+		dir_objs.list_dir_begin()
+		file_name_obj = dir_objs.get_next()
+		while file_name_obj != "":
+			if dir_objs.current_is_dir():
+				print("beep boop")
+			else:
+				if !file_name_obj.begins_with("FLOOR_") and !file_name_obj.begins_with("BRICK_") and file_name_obj.ends_with("png"):
+					obj_textures.append(file_name_obj)
+			#file_name = dir.get_next()
+			file_name_obj = dir_objs.get_next()
 	else:
 		print("An error occurred when trying to access the path.")
