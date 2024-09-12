@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 @onready var collision_node = get_node("/root/MAIN")
 @onready var button_duration = $Timer
-@onready var body = $Mesh
+@onready var body = $Rot#Mesh
 @onready var cam = $Rot/Camera3D
 
 @onready var GridUp = Vector3(0,0,-1) #-1
@@ -29,8 +29,8 @@ func _unhandled_key_input(_event):
 
 func _physics_process(delta):
 	position = position.move_toward(destination, speed * delta)
-	#body.rotation.y = lerp_angle(body.rotation.y, atan2(-next_pos.x, -next_pos.z), delta * angle_speed)
-	cam.rotation.y = lerp_angle(cam.rotation.y, atan2(-next_pos.x, -next_pos.z), delta * angle_speed)
+	body.rotation.y = lerp_angle(body.rotation.y, atan2(-next_pos.x, -next_pos.z), delta * angle_speed)
+	#cam.rotation.y = lerp_angle(cam.rotation.y, atan2(-next_pos.x, -next_pos.z), delta * angle_speed)
 
 	if !position + Vector3.FORWARD in collision_node._collision_:
 		if Input.is_action_just_pressed("ui_up") and button_duration.is_stopped():

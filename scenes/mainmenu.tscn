@@ -41,8 +41,6 @@ al azar"
 horizontal_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 8.0
-one_shot = true
 
 [node name="ThirdPerson" type="Button" parent="."]
 layout_mode = 1
@@ -74,6 +72,5 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "First Person (janky atm)"
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="ThirdPerson" to="." method="third_person_mode"]
 [connection signal="pressed" from="FirstPerson" to="." method="first_person_mode"]

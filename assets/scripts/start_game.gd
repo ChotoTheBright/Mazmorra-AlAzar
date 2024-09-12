@@ -1,15 +1,15 @@
 extends Node
-#even numbers for the grid provide the best results
-@export var grid_size = 8 
-@onready var PRELOAD = Init
+
+@export var grid_size = 8 #even numbers for the grid provide best results
 @onready var player = Init.player
-@onready var playerFP = Init.playerFP #first person view
+@onready var playerFP = Init.playerFP #control for first person view
 @onready var tile = Init.tile
 @onready var object = Init.object
 @onready var worldbox = Init.worldbox
 @onready var environment = $WorldEnvironment
 @onready var rng = RandomNumberGenerator.new()
 @onready var _collision_ = [] 
+var trans
 
 func _ready():
 	Init.tilerng.randomize()
@@ -31,7 +31,6 @@ func enter_player():
 		add_child(inst)
 		inst.translate(Vector3(0,0,0))
 
-
 func enter_grid():
 	randomize()
 	for x in range(grid_size):
@@ -40,24 +39,28 @@ func enter_grid():
 			add_child(inst)
 			@warning_ignore("integer_division")
 			inst.translate(Vector3(x,0,y)-Vector3(grid_size/2,0,grid_size/2))
-			var ran_range = Init.tilerng.randi_range(0,13)#0,8
+			#set texture
+			var ran_range = Init.tilerng.randi_range(0,8)#0,8
 			var tex_name : String = Init.tile_textures[ran_range]#0
 			@warning_ignore("int_as_enum_without_cast")
 			Init.tilemat.set_texture(0,load("res://assets/images-fonts/RetroTextures/Floor/"+tex_name))
 
-
 func enter_objects():
-	randomize()
 	for x in range(grid_size):
 		for y in range(grid_size):
 			rng = randi() % 100 - 1
-			if rng < 15:
+			if rng < 16:
 				var inst = object.instantiate()
 				add_child(inst)
 				@warning_ignore("integer_division")
 				inst.translate(Vector3(x,0,y)-Vector3(grid_size/2,0,grid_size/2))
-				var trans = inst.get_global_position()
+
+				trans = inst.get_global_position()
 				_collision_.append(trans)
+				if trans == Vector3(0,1,0):
+					inst.queue_free()
+
+				#set texture
 				var ran_range = Init.objrng.randi_range(0,13)
 				var tex_name : String = Init.obj_textures[ran_range]#0
 				@warning_ignore("int_as_enum_without_cast")
@@ -91,6 +94,7 @@ func enter_box():
 			_collision_.append(boxtran2)
 			_collision_.append(boxtran3)
 			_collision_.append(boxtran4)
+			#set texture
 			var ran_range = Init.wallrng.randi_range(0,13)
 			var tex_name : String = Init.wall_textures[ran_range]#0
 			@warning_ignore("int_as_enum_without_cast")

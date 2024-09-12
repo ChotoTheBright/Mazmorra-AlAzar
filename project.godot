@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="mazmorrita"
-run/main_scene="res://scenes/mainmenu.tscn"
+run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -22,3 +22,7 @@ Init="*res://assets/scripts/init.gd"
 [dotnet]
 
 project/assembly_name="GridMove3D"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/fun_coding/plugin.cfg")

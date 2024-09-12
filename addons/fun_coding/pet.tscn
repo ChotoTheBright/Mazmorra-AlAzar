@@ -1,0 +1,89 @@
+[gd_scene load_steps=11 format=3 uid="uid://uqdg5gxw2elh"]
+
+[ext_resource type="Script" path="res://addons/fun_coding/pet.gd" id="1_4ju3g"]
+[ext_resource type="Texture2D" uid="uid://dxep1nvp2bys2" path="res://addons/fun_coding/slime_pet.png" id="1_cjyba"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gst1m"]
+atlas = ExtResource("1_cjyba")
+region = Rect2(0, 0, 16, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_473a8"]
+atlas = ExtResource("1_cjyba")
+region = Rect2(16, 0, 16, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gkne"]
+atlas = ExtResource("1_cjyba")
+region = Rect2(32, 0, 16, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k241r"]
+atlas = ExtResource("1_cjyba")
+region = Rect2(48, 0, 16, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ok23n"]
+atlas = ExtResource("1_cjyba")
+region = Rect2(64, 0, 16, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7gsy"]
+atlas = ExtResource("1_cjyba")
+region = Rect2(80, 0, 16, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bolg4"]
+atlas = ExtResource("1_cjyba")
+region = Rect2(96, 0, 16, 13)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bejbv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gst1m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_473a8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gkne")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k241r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ok23n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7gsy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bolg4")
+}],
+"loop": true,
+"name": &"move",
+"speed": 10.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_4ju3g")
+
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
+texture_filter = 5
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_bejbv")
+animation = &"move"
+autoplay = "move"
+frame_progress = 0.690055
+
+[node name="PanicTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="CancelPanicTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="PanicTimer" to="." method="_on_PanicTimer_timeout"]
+[connection signal="timeout" from="CancelPanicTimer" to="." method="_on_CancelPanicTimer_timeout"]

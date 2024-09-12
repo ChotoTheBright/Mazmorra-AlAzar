@@ -18,7 +18,6 @@ extends Node
 @onready var obj_textures = []
 @onready var wall_textures = []
 
-
 @onready var player_mode : bool = false #set to true for 1st Person
 
 
