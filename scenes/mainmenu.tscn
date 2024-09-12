@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://br2egfj6agjkf"]
+[gd_scene load_steps=6 format=3 uid="uid://br2egfj6agjkf"]
 
 [ext_resource type="Script" path="res://assets/scripts/mainmenu.gd" id="1_ko41e"]
 [ext_resource type="Texture2D" uid="uid://c1fbyiuwn3ewt" path="res://assets/images-fonts/RetroTextures/Walls/TILE_3D.png" id="2_cxdjd"]
+[ext_resource type="FontFile" uid="uid://b3o18gkdrrn13" path="res://assets/images-fonts/Berry Rotunda.ttf" id="3_l83pa"]
+
+[sub_resource type="FontVariation" id="FontVariation_supe0"]
+base_font = ExtResource("3_l83pa")
+
+[sub_resource type="FontVariation" id="FontVariation_l3t3l"]
+base_font = ExtResource("3_l83pa")
+spacing_top = 3
 
 [node name="MAINMENU" type="Control"]
 layout_mode = 3
@@ -26,51 +34,39 @@ stretch_mode = 1
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.347
-anchor_top = 0.37
-anchor_right = 0.657
-anchor_bottom = 0.597
-offset_left = 0.255981
-offset_top = 0.23999
-offset_right = -237.864
-offset_bottom = -97.856
+anchor_left = 0.369
+anchor_top = 0.386
+anchor_right = 0.629
+anchor_bottom = 0.557
+offset_left = -0.0880127
+offset_top = -0.128006
+offset_right = -199.608
+offset_bottom = -73.936
 scale = Vector2(3, 3)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.473521, 0.173652, 0.00293501, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("FontVariation_supe0")
 text = "mazmorra 
 al azar"
 horizontal_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
 
-[node name="ThirdPerson" type="Button" parent="."]
+[node name="Start Game" type="Button" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.26
-anchor_top = 0.79
-anchor_right = 0.427
-anchor_bottom = 0.84
-offset_left = 0.47998
-offset_top = 0.0799866
-offset_right = 0.0959778
-offset_bottom = -0.320007
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -132.0
+offset_right = 64.0
+offset_bottom = -100.0
 grow_horizontal = 2
-grow_vertical = 2
-text = "Third Person"
+grow_vertical = 0
+theme_override_fonts/font = SubResource("FontVariation_l3t3l")
+text = "Start Game"
 
-[node name="FirstPerson" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.576
-anchor_top = 0.79
-anchor_right = 0.742
-anchor_bottom = 0.84
-offset_left = -0.552063
-offset_top = 0.0799866
-offset_right = 0.215942
-offset_bottom = -0.320007
-grow_horizontal = 2
-grow_vertical = 2
-text = "First Person (janky atm)"
-
-[connection signal="pressed" from="ThirdPerson" to="." method="third_person_mode"]
-[connection signal="pressed" from="FirstPerson" to="." method="first_person_mode"]
+[connection signal="pressed" from="Start Game" to="." method="third_person_mode"]
