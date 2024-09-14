@@ -1,6 +1,7 @@
 extends Node
 
-@export var grid_size = 8 #even numbers for the grid provide best results
+@export var grid_size = 8 #multiples of 8 seem to work best
+
 @onready var player = Init.player
 @onready var tile = Init.tile
 @onready var object = Init.object
@@ -30,7 +31,7 @@ func enter_player():
 	inst.destination = inst.position
 
 func enter_grid():
-	randomize()
+	#randomize()
 
 	for x in range(grid_size):
 		for y in range(grid_size):
@@ -69,7 +70,7 @@ func enter_objects():
 				Init.objectmat.set_texture(0,load("res://Assets/images-fonts/RetroTextures/Objects/"+tex_name))
 
 func enter_box():
-	randomize()
+	#randomize()
 	for x in range(grid_size):
 		for y in range(grid_size):
 			var w1 = worldbox.instantiate()
