@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b3o18gkdrrn13"
-path="res://.godot/imported/Berry Rotunda.ttf-39b5896b80b53d725d7d04eb9c3f3844.fontdata"
+path="res://.godot/imported/Berry Rotunda.ttf-6ff3f337404da61e1749f3078a476eb2.fontdata"
 
 [deps]
 
-source_file="res://assets/images-fonts/Berry Rotunda.ttf"
-dest_files=["res://.godot/imported/Berry Rotunda.ttf-39b5896b80b53d725d7d04eb9c3f3844.fontdata"]
+source_file="res://Assets/images-fonts/Berry Rotunda.ttf"
+dest_files=["res://.godot/imported/Berry Rotunda.ttf-6ff3f337404da61e1749f3078a476eb2.fontdata"]
 
 [params]
 

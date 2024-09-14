@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1w7wybudcdd8"
-path="res://.godot/imported/STUCCO_1D.png-0707dc7e282e6a84012efaaa6ee9054d.ctex"
+path="res://.godot/imported/STUCCO_1D.png-48fc05f5a6ba870ead13a81073d94fd5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/RetroTextures/Walls/STUCCO_1D.png"
-dest_files=["res://.godot/imported/STUCCO_1D.png-0707dc7e282e6a84012efaaa6ee9054d.ctex"]
+source_file="res://Assets/images-fonts/RetroTextures/Walls/STUCCO_1D.png"
+dest_files=["res://.godot/imported/STUCCO_1D.png-48fc05f5a6ba870ead13a81073d94fd5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o3moil2p87w3"
-path="res://.godot/imported/RIVET_1B.png-8f73ad2029258fe23a64161e5819fee8.ctex"
+path="res://.godot/imported/RIVET_1B.png-35881a417fe4a79e4f90f76d0a02a0d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/RetroTextures/Floor/RIVET_1B.png"
-dest_files=["res://.godot/imported/RIVET_1B.png-8f73ad2029258fe23a64161e5819fee8.ctex"]
+source_file="res://Assets/images-fonts/RetroTextures/Floor/RIVET_1B.png"
+dest_files=["res://.godot/imported/RIVET_1B.png-35881a417fe4a79e4f90f76d0a02a0d0.ctex"]
 
 [params]
 

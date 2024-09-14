@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8c2kypybwuus"
-path="res://.godot/imported/STEEL_2A.png-bf6689f3fd7ca1b2e505faa533150eaf.ctex"
+path="res://.godot/imported/STEEL_2A.png-677a0bbec06a590bb253ae223331c143.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/RetroTextures/Floor/STEEL_2A.png"
-dest_files=["res://.godot/imported/STEEL_2A.png-bf6689f3fd7ca1b2e505faa533150eaf.ctex"]
+source_file="res://Assets/images-fonts/RetroTextures/Floor/STEEL_2A.png"
+dest_files=["res://.godot/imported/STEEL_2A.png-677a0bbec06a590bb253ae223331c143.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cfx0120juesl0"
-path="res://.godot/imported/OpenDyslexic-BoldItalic.otf-b6d44ac9952a403dc4326d7ba5f5592a.fontdata"
+path="res://.godot/imported/OpenDyslexic-BoldItalic.otf-f5f35caf86355453cc1223b1345210e9.fontdata"
 
 [deps]
 
-source_file="res://assets/images-fonts/OpenDyslexic-BoldItalic.otf"
-dest_files=["res://.godot/imported/OpenDyslexic-BoldItalic.otf-b6d44ac9952a403dc4326d7ba5f5592a.fontdata"]
+source_file="res://Assets/images-fonts/OpenDyslexic-BoldItalic.otf"
+dest_files=["res://.godot/imported/OpenDyslexic-BoldItalic.otf-f5f35caf86355453cc1223b1345210e9.fontdata"]
 
 [params]
 

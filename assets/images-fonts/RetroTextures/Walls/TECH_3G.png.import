@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxtbllg5dqmgg"
-path="res://.godot/imported/TECH_3G.png-20b5aed22a72a537cdc04db06c828446.ctex"
+path="res://.godot/imported/TECH_3G.png-b5764057a4b7ec2e5ed2fe5b07fbfd61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/RetroTextures/Walls/TECH_3G.png"
-dest_files=["res://.godot/imported/TECH_3G.png-20b5aed22a72a537cdc04db06c828446.ctex"]
+source_file="res://Assets/images-fonts/RetroTextures/Walls/TECH_3G.png"
+dest_files=["res://.godot/imported/TECH_3G.png-b5764057a4b7ec2e5ed2fe5b07fbfd61.ctex"]
 
 [params]
 

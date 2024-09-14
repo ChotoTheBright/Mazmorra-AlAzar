@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7dlc4dmjasmc"
-path="res://.godot/imported/HEDGE_2A.png-3c8dde1e4010280cb6bd530f9b26c263.ctex"
+path="res://.godot/imported/HEDGE_2A.png-b8be1f6dcb0a9bc9a63917249675d157.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/RetroTextures/Walls/HEDGE_2A.png"
-dest_files=["res://.godot/imported/HEDGE_2A.png-3c8dde1e4010280cb6bd530f9b26c263.ctex"]
+source_file="res://Assets/images-fonts/RetroTextures/Walls/HEDGE_2A.png"
+dest_files=["res://.godot/imported/HEDGE_2A.png-b8be1f6dcb0a9bc9a63917249675d157.ctex"]
 
 [params]
 

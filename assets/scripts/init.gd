@@ -1,16 +1,16 @@
 extends Node
 #putting everything in here as a MACRO
-@onready var player = preload("res://scenes/player.tscn")
-@onready var tile = preload("res://scenes/Tile.tscn")
-@onready var tilemat = preload("res://assets/TileMat.tres")
+@onready var player = preload("res://Scenes/player.tscn")
+@onready var tile = preload("res://Scenes/Tile.tscn")
+@onready var tilemat = preload("res://Assets/Tile_Mat.tres")
 @onready var tilerng = RandomNumberGenerator.new()
 ##
-@onready var worldbox = preload("res://scenes/WorldBox.tscn")
-@onready var wallmat = preload("res://assets/WorldBoxMat.tres")
+@onready var worldbox = preload("res://Scenes/WorldBox.tscn")
+@onready var wallmat = preload("res://Assets/WorldBox_Mat.tres")
 @onready var wallrng = RandomNumberGenerator.new()
 ##
-@onready var object = preload("res://scenes/Object.tscn")
-@onready var objectmat = preload("res://assets/ObjectMat.tres")
+@onready var object = preload("res://Scenes/Object.tscn")
+@onready var objectmat = preload("res://Assets/Object_Mat.tres")
 @onready var objrng = RandomNumberGenerator.new()
 #textures#
 @onready var tile_textures = []
@@ -21,9 +21,9 @@ extends Node
 
 
 func _ready():
-	var dir_floor = DirAccess.open("res://assets/images-fonts/RetroTextures/Floor")
-	var dir_walls = DirAccess.open("res://assets/images-fonts/RetroTextures/Walls")
-	var dir_objs = DirAccess.open("res://assets/images-fonts/RetroTextures/Objects")
+	var dir_floor = DirAccess.open("res://Assets/images-fonts/RetroTextures/Floor")
+	var dir_walls = DirAccess.open("res://Assets/images-fonts/RetroTextures/Walls")
+	var dir_objs = DirAccess.open("res://Assets/images-fonts/RetroTextures/Objects")
 	var file_name_floor
 	var file_name_wall
 	var file_name_obj

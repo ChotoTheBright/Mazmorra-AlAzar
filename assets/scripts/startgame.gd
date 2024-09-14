@@ -42,7 +42,7 @@ func enter_grid():
 			var ran_range = Init.tilerng.randi_range(0,8)
 			var tex_name : String = Init.tile_textures[ran_range]#0
 			@warning_ignore("int_as_enum_without_cast")
-			Init.tilemat.set_texture(0,load("res://assets/images-fonts/RetroTextures/Floor/"+tex_name))
+			Init.tilemat.set_texture(0,load("res://Assets/images-fonts/RetroTextures/Floor/"+tex_name))
 
 func enter_objects():
 	for x in range(grid_size):
@@ -66,7 +66,7 @@ func enter_objects():
 				var ran_range = Init.objrng.randi_range(0,13)
 				var tex_name : String = Init.obj_textures[ran_range]
 				@warning_ignore("int_as_enum_without_cast")
-				Init.objectmat.set_texture(0,load("res://assets/images-fonts/RetroTextures/Objects/"+tex_name))
+				Init.objectmat.set_texture(0,load("res://Assets/images-fonts/RetroTextures/Objects/"+tex_name))
 
 func enter_box():
 	randomize()
@@ -100,4 +100,4 @@ func enter_box():
 			var ran_range = Init.wallrng.randi_range(0,11)
 			var tex_name : String = Init.wall_textures[ran_range]
 			@warning_ignore("int_as_enum_without_cast")
-			Init.wallmat.set_texture(0,load("res://assets/images-fonts/RetroTextures/Walls/"+tex_name))
+			Init.wallmat.set_texture(0,load("res://Assets/images-fonts/RetroTextures/Walls/"+tex_name))

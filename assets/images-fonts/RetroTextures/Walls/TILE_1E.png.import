@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nnweacytvmin"
-path="res://.godot/imported/TILE_1E.png-9506e898d609df2a105c51f14c33b5cf.ctex"
+path="res://.godot/imported/TILE_1E.png-c7ab7b5ffab7fe387525f746db28c3ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/RetroTextures/Walls/TILE_1E.png"
-dest_files=["res://.godot/imported/TILE_1E.png-9506e898d609df2a105c51f14c33b5cf.ctex"]
+source_file="res://Assets/images-fonts/RetroTextures/Walls/TILE_1E.png"
+dest_files=["res://.godot/imported/TILE_1E.png-c7ab7b5ffab7fe387525f746db28c3ae.ctex"]
 
 [params]
 

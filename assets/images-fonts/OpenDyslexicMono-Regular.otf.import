@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bvsuqyyr441uu"
-path="res://.godot/imported/OpenDyslexicMono-Regular.otf-4b3a0418c09e65a123d53aab8b0b76a6.fontdata"
+path="res://.godot/imported/OpenDyslexicMono-Regular.otf-de4779f4370c62647c4ec2b2f887782b.fontdata"
 
 [deps]
 
-source_file="res://assets/images-fonts/OpenDyslexicMono-Regular.otf"
-dest_files=["res://.godot/imported/OpenDyslexicMono-Regular.otf-4b3a0418c09e65a123d53aab8b0b76a6.fontdata"]
+source_file="res://Assets/images-fonts/OpenDyslexicMono-Regular.otf"
+dest_files=["res://.godot/imported/OpenDyslexicMono-Regular.otf-de4779f4370c62647c4ec2b2f887782b.fontdata"]
 
 [params]
 

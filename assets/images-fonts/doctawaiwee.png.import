@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgvs4wh13syfi"
-path="res://.godot/imported/doctawaiwee.png-bc17b9d49a821ff7c60005b97194d09c.ctex"
+path="res://.godot/imported/doctawaiwee.png-de46d219b95f399f8b5442d5cca65ded.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/doctawaiwee.png"
-dest_files=["res://.godot/imported/doctawaiwee.png-bc17b9d49a821ff7c60005b97194d09c.ctex"]
+source_file="res://Assets/images-fonts/doctawaiwee.png"
+dest_files=["res://.godot/imported/doctawaiwee.png-de46d219b95f399f8b5442d5cca65ded.ctex"]
 
 [params]
 

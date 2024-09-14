@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0mvuisoxtexk"
-path="res://.godot/imported/CRATE_2M.png-333bfb4ec190762557619939a4cbb2d7.ctex"
+path="res://.godot/imported/CRATE_2M.png-93283fa0c511f45c16ec006218f8d205.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/RetroTextures/Objects/CRATE_2M.png"
-dest_files=["res://.godot/imported/CRATE_2M.png-333bfb4ec190762557619939a4cbb2d7.ctex"]
+source_file="res://Assets/images-fonts/RetroTextures/Objects/CRATE_2M.png"
+dest_files=["res://.godot/imported/CRATE_2M.png-93283fa0c511f45c16ec006218f8d205.ctex"]
 
 [params]
 

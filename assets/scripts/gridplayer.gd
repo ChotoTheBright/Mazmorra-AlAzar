@@ -15,7 +15,7 @@ var can_move = false
 #Player inits moved to start_game script, in enter_player func.
 
 func _unhandled_key_input(_event):
-	if Input.is_action_just_pressed("ui_select"):
+	if Input.is_action_just_pressed("movement_jump"):
 		get_tree().reload_current_scene()
 
 func _physics_process(delta):
@@ -23,25 +23,25 @@ func _physics_process(delta):
 	body.rotation.y = lerp_angle(body.rotation.y, atan2(-next_pos.x, -next_pos.z), delta * angle_speed)
 
 	if !position + Vector3.FORWARD in collision_node._collision_:
-		if Input.is_action_just_pressed("ui_up") and button_duration.is_stopped():
+		if Input.is_action_just_pressed("movement_up") and button_duration.is_stopped():
 			next_pos = Vector3.FORWARD
 			current_dir = "up"
 			can_move = true
 			button_duration.start()
 	if !position + Vector3.BACK in collision_node._collision_:
-		if Input.is_action_just_pressed("ui_down") and button_duration.is_stopped():
+		if Input.is_action_just_pressed("movement_down") and button_duration.is_stopped():
 			next_pos = Vector3.BACK
 			current_dir = "down" 
 			can_move = true
 			button_duration.start()
 	if !position + Vector3.RIGHT in collision_node._collision_:
-		if Input.is_action_just_pressed("ui_right") and button_duration.is_stopped():
+		if Input.is_action_just_pressed("movement_right") and button_duration.is_stopped():
 			next_pos = Vector3.RIGHT
 			current_dir = "right"
 			can_move = true
 			button_duration.start()
 	if !position + Vector3.LEFT in collision_node._collision_:
-		if Input.is_action_just_pressed("ui_left") and button_duration.is_stopped():
+		if Input.is_action_just_pressed("movement_left") and button_duration.is_stopped():
 			next_pos = Vector3.LEFT
 			current_dir = "left"
 			can_move = true

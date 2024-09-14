@@ -1,13 +1,13 @@
 [gd_scene load_steps=6 format=3 uid="uid://uqdg5gxw2elh"]
 
 [ext_resource type="Script" path="res://addons/fun_coding/pet.gd" id="1_4ju3g"]
-[ext_resource type="Texture2D" uid="uid://bjmkx304y8hbw" path="res://assets/images-fonts/soopersonk.png" id="2_qup40"]
+[ext_resource type="Texture2D" uid="uid://bjmkx304y8hbw" path="res://Assets/images-fonts/soopersonk.png" id="2_qup40"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_s7u3v"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ryaby"]
 atlas = ExtResource("2_qup40")
 region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xi2v6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tymr"]
 atlas = ExtResource("2_qup40")
 region = Rect2(16, 0, 16, 16)
 
@@ -15,10 +15,10 @@ region = Rect2(16, 0, 16, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_s7u3v")
+"texture": SubResource("AtlasTexture_ryaby")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xi2v6")
+"texture": SubResource("AtlasTexture_4tymr")
 }],
 "loop": true,
 "name": &"move",

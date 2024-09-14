@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3ohtsahqa3ek"
-path="res://.godot/imported/SLIME_1B.png-a840c56a79967a4c1110e30e04c11d16.ctex"
+path="res://.godot/imported/SLIME_1B.png-1bb1e7ae1f5b2249fa2d8cd9ff5a24c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/RetroTextures/Floor/SLIME_1B.png"
-dest_files=["res://.godot/imported/SLIME_1B.png-a840c56a79967a4c1110e30e04c11d16.ctex"]
+source_file="res://Assets/images-fonts/RetroTextures/Floor/SLIME_1B.png"
+dest_files=["res://.godot/imported/SLIME_1B.png-1bb1e7ae1f5b2249fa2d8cd9ff5a24c4.ctex"]
 
 [params]
 

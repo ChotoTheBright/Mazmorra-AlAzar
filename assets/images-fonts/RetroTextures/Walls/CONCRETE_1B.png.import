@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wte25qqekc7"
-path="res://.godot/imported/CONCRETE_1B.png-f14cd4a446856a6fa258fa431472d1f7.ctex"
+path="res://.godot/imported/CONCRETE_1B.png-75aeeccc024a10c35d34af465658c4f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/RetroTextures/Walls/CONCRETE_1B.png"
-dest_files=["res://.godot/imported/CONCRETE_1B.png-f14cd4a446856a6fa258fa431472d1f7.ctex"]
+source_file="res://Assets/images-fonts/RetroTextures/Walls/CONCRETE_1B.png"
+dest_files=["res://.godot/imported/CONCRETE_1B.png-75aeeccc024a10c35d34af465658c4f5.ctex"]
 
 [params]
 

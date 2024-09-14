@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b6171rvh7b28x"]
 
-[ext_resource type="Material" uid="uid://r6sasvrxk7a7" path="res://assets/WorldBoxMat.tres" id="1_weai3"]
+[ext_resource type="Material" uid="uid://r6sasvrxk7a7" path="res://Assets/WorldBox_Mat.tres" id="1_weai3"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_yueao"]
 material = ExtResource("1_weai3")

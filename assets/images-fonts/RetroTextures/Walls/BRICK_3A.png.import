@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdltmhhwl618y"
-path="res://.godot/imported/BRICK_3A.png-f55c2bea6f78ac104bd3c90eee31243f.ctex"
+path="res://.godot/imported/BRICK_3A.png-6c2a53aa5897f26b57cd1b7becb41b3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/RetroTextures/Walls/BRICK_3A.png"
-dest_files=["res://.godot/imported/BRICK_3A.png-f55c2bea6f78ac104bd3c90eee31243f.ctex"]
+source_file="res://Assets/images-fonts/RetroTextures/Walls/BRICK_3A.png"
+dest_files=["res://.godot/imported/BRICK_3A.png-6c2a53aa5897f26b57cd1b7becb41b3b.ctex"]
 
 [params]
 

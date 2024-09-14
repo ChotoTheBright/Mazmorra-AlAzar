@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dthdea3q83rqd"
-path="res://.godot/imported/loonydudesonic.png-f6982ae4ca6a35430de4a03b5ece7fca.ctex"
+path="res://.godot/imported/loonydudesonic.png-30587e0f9d0c634b3f2241a94f697685.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/loonydudesonic.png"
-dest_files=["res://.godot/imported/loonydudesonic.png-f6982ae4ca6a35430de4a03b5ece7fca.ctex"]
+source_file="res://Assets/images-fonts/loonydudesonic.png"
+dest_files=["res://.godot/imported/loonydudesonic.png-30587e0f9d0c634b3f2241a94f697685.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cefp55cyiqdn"
-path="res://.godot/imported/PIPES_1B.png-ca647ea2927e53e7699f4df30f70040e.ctex"
+path="res://.godot/imported/PIPES_1B.png-b4d993c9f078185260c1916552cc8a70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images-fonts/RetroTextures/Objects/PIPES_1B.png"
-dest_files=["res://.godot/imported/PIPES_1B.png-ca647ea2927e53e7699f4df30f70040e.ctex"]
+source_file="res://Assets/images-fonts/RetroTextures/Objects/PIPES_1B.png"
+dest_files=["res://.godot/imported/PIPES_1B.png-b4d993c9f078185260c1916552cc8a70.ctex"]
 
 [params]
 

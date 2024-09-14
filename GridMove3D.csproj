@@ -1,9 +1,0 @@
-<Project Sdk="Godot.NET.Sdk/4.3.0">
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <EnableDynamicLoading>true</EnableDynamicLoading>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="assets\scripts\TextFile1.txt" />
-  </ItemGroup>
-</Project>
