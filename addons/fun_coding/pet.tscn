@@ -1,24 +1,24 @@
 [gd_scene load_steps=6 format=3 uid="uid://uqdg5gxw2elh"]
 
 [ext_resource type="Script" path="res://addons/fun_coding/pet.gd" id="1_4ju3g"]
-[ext_resource type="Texture2D" uid="uid://dgvs4wh13syfi" path="res://assets/images-fonts/doctawaiwee.png" id="2_nphjm"]
+[ext_resource type="Texture2D" uid="uid://bjmkx304y8hbw" path="res://assets/images-fonts/soopersonk.png" id="2_qup40"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wvc0o"]
-atlas = ExtResource("2_nphjm")
-region = Rect2(0, 0, 64, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7u3v"]
+atlas = ExtResource("2_qup40")
+region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_b72h3"]
-atlas = ExtResource("2_nphjm")
-region = Rect2(64, 0, 64, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_xi2v6"]
+atlas = ExtResource("2_qup40")
+region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bejbv"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_wvc0o")
+"texture": SubResource("AtlasTexture_s7u3v")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_b72h3")
+"texture": SubResource("AtlasTexture_xi2v6")
 }],
 "loop": true,
 "name": &"move",
@@ -37,12 +37,11 @@ script = ExtResource("1_4ju3g")
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 5
-scale = Vector2(1.5, 1.5)
+scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_bejbv")
 animation = &"move"
 autoplay = "move"
 frame_progress = 0.690055
-speed_scale = 0.25
 
 [node name="PanicTimer" type="Timer" parent="."]
 one_shot = true

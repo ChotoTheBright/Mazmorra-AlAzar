@@ -1,7 +1,6 @@
 extends Node
 #putting everything in here as a MACRO
 @onready var player = preload("res://scenes/player.tscn")
-@onready var playerFP = preload("res://scenes/player_FP.tscn")
 @onready var tile = preload("res://scenes/Tile.tscn")
 @onready var tilemat = preload("res://assets/TileMat.tres")
 @onready var tilerng = RandomNumberGenerator.new()
@@ -18,7 +17,7 @@ extends Node
 @onready var obj_textures = []
 @onready var wall_textures = []
 
-@onready var player_mode : bool = false #set to true for 1st Person
+@onready var player_mode : bool = false
 
 
 func _ready():
