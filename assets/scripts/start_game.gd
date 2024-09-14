@@ -24,6 +24,10 @@ func enter_player():
 	var inst = player.instantiate()
 	add_child(inst)
 	inst.translate(Vector3(0,0,0))
+	#-------------------------#
+	inst.current_dir = "up"
+	inst.next_pos = Vector3.FORWARD
+	inst.destination = inst.position
 
 func enter_grid():
 	randomize()

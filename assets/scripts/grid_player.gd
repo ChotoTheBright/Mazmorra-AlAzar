@@ -12,11 +12,7 @@ var next_pos = Vector3()
 var destination = Vector3()
 var can_move = false
 
-
-func _ready():
-	current_dir = "up"
-	next_pos = Vector3.FORWARD
-	destination = position
+#Player inits moved to start_game script, in enter_player func.
 
 func _unhandled_key_input(_event):
 	if Input.is_action_just_pressed("ui_select"):
