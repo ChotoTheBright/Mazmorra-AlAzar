@@ -13,4 +13,4 @@ The grid is adjustable in the Editor and via code, so you can make bigger and sm
 
 ![alt text](https://raw.githubusercontent.com/ChotoTheBright/Mazmorra-AlAzar/main/assets/images-fonts/screencap4.png "Screenshot 4")
 
-This project uses the Godot 4 Template by Laura Finn : https://github.com/SchaafLaura/Template-Project-for-Godot-4.3-Mono
+This project uses the Godot 4 Template by Laura Schaaf : https://github.com/SchaafLaura/Template-Project-for-Godot-4.3-Mono
