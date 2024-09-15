@@ -4,7 +4,7 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xumk5"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_ty8f8"]
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_w4dtk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d12t0"]
 metallic_specular = 0.0
@@ -25,7 +25,7 @@ shape = SubResource("CapsuleShape3D_xumk5")
 disabled = true
 
 [node name="Mesh" type="MeshInstance3D" parent="."]
-mesh = SubResource("CapsuleMesh_ty8f8")
+mesh = SubResource("CapsuleMesh_w4dtk")
 surface_material_override/0 = SubResource("StandardMaterial3D_d12t0")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh"]

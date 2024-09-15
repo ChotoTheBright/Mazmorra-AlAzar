@@ -1,13 +1,37 @@
-[gd_scene load_steps=4 format=3 uid="uid://b11vmx6jy5y3b"]
+[gd_scene load_steps=10 format=3 uid="uid://b11vmx6jy5y3b"]
 
 [ext_resource type="Script" path="res://Scenes/Menus/MainMenu/MainMenuButtonHandler.cs" id="1_0m461"]
 [ext_resource type="PackedScene" uid="uid://b55y3msplkiv8" path="res://Assets/Button/ButtonPrototype.tscn" id="2_agubx"]
 [ext_resource type="PackedScene" uid="uid://pok7id0k87pv" path="res://Assets/Background/BackgroundPrototype.tscn" id="2_nwbus"]
+[ext_resource type="Texture2D" uid="uid://b62l3kb5my1nn" path="res://Assets/bigBrick.png" id="3_t8vng"]
+[ext_resource type="FontFile" uid="uid://b3o18gkdrrn13" path="res://Assets/images-fonts/Berry Rotunda.ttf" id="4_sagyi"]
+
+[sub_resource type="FontVariation" id="FontVariation_e6l28"]
+base_font = ExtResource("4_sagyi")
+
+[sub_resource type="FontVariation" id="FontVariation_af6p5"]
+base_font = ExtResource("4_sagyi")
+
+[sub_resource type="FontVariation" id="FontVariation_v7s8q"]
+base_font = ExtResource("4_sagyi")
+
+[sub_resource type="FontVariation" id="FontVariation_2iyfv"]
+base_font = ExtResource("4_sagyi")
 
 [node name="Node" type="Node"]
 script = ExtResource("1_0m461")
 
 [node name="rct_background" parent="." instance=ExtResource("2_nwbus")]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_t8vng")
+stretch_mode = 1
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -31,19 +55,29 @@ theme_override_constants/separation = 20
 
 [node name="lbl_label" type="Label" parent="Control/CenterContainer/VBoxContainer"]
 layout_mode = 2
-text = "main menu
-"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("FontVariation_e6l28")
+theme_override_font_sizes/font_size = 32
+text = "Mazmorra 
+Al Azar"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="btn_play" parent="Control/CenterContainer/VBoxContainer" instance=ExtResource("2_agubx")]
 layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_af6p5")
 text = "play"
 
 [node name="btn_settings" parent="Control/CenterContainer/VBoxContainer" instance=ExtResource("2_agubx")]
 layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_v7s8q")
 text = "settings"
 
 [node name="btn_quit" parent="Control/CenterContainer/VBoxContainer" instance=ExtResource("2_agubx")]
 layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_2iyfv")
 text = "bye
 "
 
