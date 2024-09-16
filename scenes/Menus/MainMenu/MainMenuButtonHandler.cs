@@ -5,7 +5,11 @@ public partial class MainMenuButtonHandler : Node
 {
 	public void OnStartPressed()
 	{
-		SceneManager.ChangeSceneForward("res://Scenes/Main.tscn", this);//"GameScene.tscn"
+		SceneManager.ChangeSceneForward("res://Scenes/Main.tscn", this);//#orig was GameScene.tscn
+	}
+	public void OnStartMidiPressed()
+	{
+		SceneManager.ChangeSceneForward("res://Scenes/MusicMachine.tscn", this);
 	}
 	public void OnSettingsPressed()
 	{

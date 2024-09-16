@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://putktud60u6k"]
+
+[ext_resource type="Script" path="res://Assets/scripts/music_key.gd" id="1_n3gjc"]
+[ext_resource type="Script" path="res://Assets/scripts/key_color.gd" id="2_d3121"]
+
+[node name="White_Key" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 20.0
+offset_bottom = 200.0
+size_flags_horizontal = 3
+mouse_filter = 2
+script = ExtResource("1_n3gjc")
+
+[node name="Key" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = -1.0
+script = ExtResource("2_d3121")
+
+[node name="ColorTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="ColorTimer" to="." method="deactivate"]

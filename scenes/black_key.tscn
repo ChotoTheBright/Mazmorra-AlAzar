@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3ox21y3wb3rr"]
+
+[ext_resource type="Script" path="res://Assets/scripts/music_key.gd" id="1_ktno1"]
+[ext_resource type="Script" path="res://Assets/scripts/key_color.gd" id="2_aei2s"]
+
+[node name="Black_Key" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 20.0
+offset_bottom = 200.0
+size_flags_horizontal = 3
+mouse_filter = 2
+script = ExtResource("1_ktno1")
+
+[node name="Key" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6
+anchor_right = 1.4
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("2_aei2s")
+
+[node name="ColorTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="ColorTimer" to="." method="deactivate"]
