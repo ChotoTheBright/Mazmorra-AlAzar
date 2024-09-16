@@ -6,5 +6,5 @@ extends ColorRect
 func _gui_input(input_event):
 	if input_event is InputEventMouseButton and input_event.pressed:
 		parent.activate()
-		print(parent)
+		#print(parent)
 		

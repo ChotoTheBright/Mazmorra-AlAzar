@@ -12,7 +12,6 @@ func setup(pitch_index: int):
 	name = "MusicKey" + str(pitch_index)
 	var exponent := (pitch_index - 69.0) / 12.0
 	pitch_scale = pow(2, exponent)
-	print(pitch_scale)
 
 func activate():
 	key.color = (Color.DARK_RED + start_color) / 2

@@ -26,7 +26,6 @@ func _ready():
 
 	for i in range(START_KEY, END_KEY + 1):
 		music_key_dict[i] = _create_music_key(i)
-		print(i)
 
 	if white_keys.get_child_count() != black_keys.get_child_count():
 		_add_placeholder_key(black_keys)
